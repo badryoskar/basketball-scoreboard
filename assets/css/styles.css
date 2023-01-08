@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'cursed_timer';
+    src: url('../fonts/cursedtimerulil-webfont.woff2') format('woff2'),
+         url('../fonts/cursedtimerulil-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: auto;
+    margin-top: 2%;
+    padding: auto;
+    text-align: center;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container {
+    background-color: #0369A1;
+    border: 6px solid black;
+    max-width: 750px;
+    max-height: 700px;
+    color: white;
+    width: 100%;
+    margin: auto;
+}
+
+.row-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-heading {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading-title {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.home-score,
+.guest-score {
+    background-color: black;
+    width: 150px;
+    height: 120px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.home-addPoint button,
+.guest-addPoint button {
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    background: transparent;
+    width: 45px;
+    height: 45px;
+    color: #9AABD8;
+    font-family: 'cursed_timer', sans-serif;
+    font-size: 18px;
+    line-height: 27.81px;
+    text-align: center;
+    margin: auto;
+    transition: all .3s ease-in;
+}
+
+.home-addPoint button:hover,
+.guest-addPoint button:hover {
+    background: #065a86;
+    border: 2px solid #c6cfe7;
+    color: #c6cfe7;
+}
+
+h2#home-score-el,
+h2#guest-score-el {
+    font-family: 'cursed_timer', sans-serif;
+    font-size: 90px;
+    line-height: 127px;
+    color: #F94F6D;
+}
+
+.guest-heading {
+    width: 50%;
+}
+
+.row-button {
+    /* display: flex;
+    justify-content: space-evenly; */
+    padding: 15px 0;
+}
+
+.row-button button {
+    background: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: #065a86;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: all .3s ease-in;
+}
+
+.row-button button:hover {
+    background: #065a86;
+    color: white;
+    border: 1px solid white;
+}
+
+.last-scoreGame {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.last-scoreGame p {
+    color: #F94F6D;
+    font-family: 'Verdana';
+    font-weight: 600;
+    font-size: 22px;
+}

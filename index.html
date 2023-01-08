@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row-heading">
+                <div class="home-heading">
+                    <h1 class="heading-title">Home</h1>
+                    <div class="home-score">
+                        <h2 id="home-score-el">0</h1>
+                    </div>
+                    <div class="home-addPoint">
+                        <button id="home-add1Points" onclick="home_add1Points()">+1</button>
+                        <button id="home-add2Points" onclick="home_add2Points()">+2</button>
+                        <button id="home-add3Points" onclick="home_add3Points()">+3</button>
+                    </div>
+                </div>
+    
+                <div class="guest-heading">
+                    <h1 class="heading-title">Guess</h1>
+                    <div class="guest-score">
+                        <h2 id="guest-score-el">0</h2>
+                    </div>
+                    <div class="guest-addPoint">
+                        <button id="guest-add1Points" onclick="guest_add1Points()">+1</button>
+                        <button id="guest-add2Points" onclick="guest_add2Points()">+2</button>
+                        <button id="guest-add3Points" onclick="guest_add3Points()">+3</button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="row-button">
+                <button>NEW GAME</button>
+                <button>SAVE GAME</button>
+            </div>
+
+            <div class="last-scoreGame">
+                <p>LAST GAME : </p>
+                <p id="save-el">0</p>
+
+            </div>
+        
+        </div>
+        
+    </body>
+    <script src="assets/js/index.js"></script>
+</html>
