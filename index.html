@@ -1,6 +1,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     </head>
     <body>
         <div class="container">
@@ -8,7 +10,7 @@
                 <div class="home-heading">
                     <h1 class="heading-title">Home</h1>
                     <div class="home-score">
-                        <h2 id="home-score-el">0</h1>
+                        <h2 id="home-score-el">0</h2>
                     </div>
                     <div class="home-addPoint">
                         <button id="home-add1Points" onclick="home_add1Points()">+1</button>
@@ -17,6 +19,21 @@
                     </div>
                 </div>
     
+                <div class="medium-col">
+                    <div class="timer">
+                        <h2 class="heading-timer">Timer (30sec)</h2>
+                        <div class="timer-container">
+                            <h3 id="timer-el">0</h3>
+                        </div>
+                    </div>
+                    <div class="period">
+                        <h2 class="heading-period">Period (4)</h2>
+                        <div class="period-container">
+                            <h3 id="period-el">0</h3>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="guest-heading">
                     <h1 class="heading-title">Guess</h1>
                     <div class="guest-score">
@@ -30,6 +47,10 @@
                 </div>
             </div>
             
+            <div class="options-button">
+                <button id="play-game"><img src="/assets/img/play-btn.png" alt="PLAY GAME" width="22px" height="22px"></button>
+                <button id="pause-game"><img src="/assets/img/pause-btn.png" alt="SAVE GAME" width="22px" height="22px"></button>
+            </div>
 
             <div class="row-button">
                 <button id="reset-game" onclick="reset_game()">NEW GAME</button>

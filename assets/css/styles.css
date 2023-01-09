@@ -41,7 +41,16 @@ body {
     flex-direction: column;
 }
 
-.heading-title {
+.medium-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-title,
+.heading-timer,
+.heading-period {
     font-family: 'Verdana';
     font-style: normal;
     font-weight: 700;
@@ -51,8 +60,15 @@ body {
     margin-bottom: 20px;
 }
 
+.heading-timer,
+.heading-period {
+    font-size: 18px;
+}
+
 .home-score,
-.guest-score {
+.guest-score,
+.timer-container,
+.period-container {
     background-color: black;
     width: 150px;
     height: 120px;
@@ -61,6 +77,12 @@ body {
     margin-bottom: 20px;
     border-radius: 10px;
     border: 1px solid gray;
+}
+
+.timer-container,
+.period-container {
+    width: 80px;
+    height: 60px;
 }
 
 .home-addPoint button,
@@ -94,6 +116,14 @@ h2#guest-score-el {
     color: #F94F6D;
 }
 
+h3#timer-el,
+h3#period-el {
+    font-family: 'cursed_timer';
+    font-size: 30px;
+    line-height: 58px;
+    color: #F59E0B;
+}
+
 .guest-heading {
     width: 50%;
 }
@@ -101,7 +131,7 @@ h2#guest-score-el {
 .row-button {
     /* display: flex;
     justify-content: space-evenly; */
-    padding: 15px 0;
+    padding: 5px 0;
 }
 
 .row-button button {
@@ -115,6 +145,20 @@ h2#guest-score-el {
     transition: all .3s ease-in;
 }
 
+.options-button button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 0;
+}
+
+.options-button button:hover {
+    border: 1px solid black;
+    transform: scale(1.03);
+}
+
 .row-button button:hover {
     background: #065a86;
     color: white;
@@ -123,7 +167,7 @@ h2#guest-score-el {
 
 .last-scoreGame {
     background-color: black;
-    height: 100px;
+    height: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,5 +178,9 @@ h2#guest-score-el {
     color: #F94F6D;
     font-family: 'Verdana';
     font-weight: 600;
-    font-size: 22px;
+    font-size: 20px;
+}
+
+.highlight {
+    border: 1px solid #FCD34D !important;
 }
